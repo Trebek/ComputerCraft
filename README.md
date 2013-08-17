@@ -6,7 +6,7 @@ Trebek's CC Repo
 ***
 * [**About**](#about) <br/>
 * [**Program Descriptions**](#descrip) <br/>
-  * [Adlibber](#adlibber) <br/>
+  * <a href="#adlibber">Adlibber</a> <br/>
   * [AutoLights](#autolights) <br/>
   * [FirstCalc](#firstcalc) <br/>
   * [MusiCraft](#musicraft)
