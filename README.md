@@ -18,5 +18,8 @@ A very simple program that checks the time every so often, and turns on/off any 
 [**FirstCalc**]() <br />
 As the name implies, this was my first attempt at writing a little calculator program. It only add, subtracts, multiplies, and divides, and only 2 numbers at a time, but cut me some slack. Was not only the first calculator I tried to program, but also my first program in LUA at all.
 
+[**Tales From the Funhouse**]() <br />
+A quirky text adventure game, inspired by all the classic LucasArts, and Sierra adventure games - minus the graphics. My first attempt at any "serious" programming. The code is bloated, and sloppy, but I'll work on optimizing it. Just trying to get it working first. At the moment the basic program works, but there isn't much content.
+
 [**MusiCraft**]() <br />
 An overly ambitious little project. It's basically a little sequencer for Minecraft, using Note Blocks, and computers. Songs are stored in tables, in separate song files. Needs a lot of work, and is probably way over my head. The current version sort of works though.
