@@ -10,13 +10,13 @@ local Room_Table = {
 				description = "Desk description.",
 				description2 = "Desk open description.",
 				seen = false,
-				open = false,
+				isopen = false,
 			},
 			[2] = {
 				name = "Chair",
 				description = "Desk description.",
 				seen = false,
-				open = nil,
+				isopen = nil,
 			},
 		},
 	},
@@ -28,13 +28,13 @@ local Room_Table = {
 				name = "Wall",
 				description = "Desk description.",
 				seen = false,
-				open = nil,
+				isopen = nil,
 			},
 			[2] = {
 				name = "Floor",
 				description = "Desk description.",
 				seen = false,
-				open = nil,
+				isopen = nil,
 			},
 		},
 	},
@@ -71,10 +71,11 @@ local Path_Table = {
 
 local Inv_Table = {
 	[1] = {
+		room = Room_Table[1]["name"]
 		name = "Inventory Item 1",
 		description = "Inventory Item 1 description.",
 		held = false
-		open = nil
+		isopen = nil
 	},
 }
 
