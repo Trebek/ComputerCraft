@@ -145,15 +145,15 @@ function SaveGame()
 	for i, v in ipairs(Room_Table) do
 		for k, v in pairs(Room_Table[i]["features"]) do	
 			file.writeLine(textutils.serialize(Room_Table[i]["features"][k]["seen"]))
-			if Room_Table[i]["features"][k]["open"] ~= nil then
-				file.writeLine(textutils.serialize(Room_Table[i]["features"][k]["open"]))
+			if Room_Table[i]["features"][k]["isopen"] ~= nil then
+				file.writeLine(textutils.serialize(Room_Table[i]["features"][k]["isopen"]))
 			end
 		end
 	end
 	for i, v in ipairs(Inv_Table) do	
 		file.writeLine(textutils.serialize(Inv_Table[i]["held"]))
-		if Inv_Table[i]["open"] ~= nil then
-			file.writeLine(textutils.serialize(Inv_Table[i]["open"]))
+		if Inv_Table[i]["isopen"] ~= nil then
+			file.writeLine(textutils.serialize(Inv_Table[i]["isopen"]))
 		end
 	end
 	file.writeLine(textutils.serialize(Player_Table["location"]))
@@ -179,18 +179,18 @@ function LoadGame()
 			for k, v in pairs(Room_Table[i]["features"]) do
 				local RoomData = file.readLine()
 				Room_Table[i]["features"][k]["seen"] = textutils.unserialize(RoomData)
-				if Room_Table[i]["features"][k]["open"] ~= nil then
+				if Room_Table[i]["features"][k]["isopen"] ~= nil then
 					local RoomData = file.readLine()
-					Room_Table[i]["features"][k]["open"] = textutils.unserialize(RoomData)
+					Room_Table[i]["features"][k]["isopen"] = textutils.unserialize(RoomData)
 				end
 			end
 		end
 		for i, v in ipairs(Inv_Table) do
 			local InvData = file.readLine()
 			Inv_Table[i]["held"] = textutils.unserialize(InvData)
-			if Inv_Table[i]["open"] ~= nil then
+			if Inv_Table[i]["isopen"] ~= nil then
 				local InvData = file.readLine()
-				Inv_Table[i]["open"] = textutils.unserialize(InvData)
+				Inv_Table[i]["isopen"] = textutils.unserialize(InvData)
 			end
 		end
 			local PlayerData = file.readLine()
