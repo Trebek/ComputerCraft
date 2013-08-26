@@ -1,5 +1,5 @@
-Tales from the Funhouse
-=============
+
+![Tales from the Funhouse Title](http://i.imgur.com/fRhsJNd.png)
 
 ***
 **About**
