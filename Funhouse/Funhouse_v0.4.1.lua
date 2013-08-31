@@ -1,12 +1,12 @@
 --[[ INFO ]]--
 
 -- Name: Tales from the Funhouse
--- Version: 0.4.0
--- Date: 29/08/2013
+-- Version: 0.4.1
+-- Date: 30/08/2013
 -- Author: Alex Crawford
 -- Notes: https://github.com/Trebek/ComputerCraft/wiki/Tales-from-the-Funhouse
 
--- [[ TABLES ]] -- 
+-- [[ TABLES ]] --
 
 --[[ Room Table ]]--
 
@@ -14,106 +14,106 @@ Room_Table = {
     [1] = {
 		name = "Your Bedroom",
 		descripstate = 1,
-		description = "You are standing in your bedroom. It is, like most teenager's rooms, a mess. There are posters all over the walls, and clothes all over the floor. Against the west wall is your bed, and against the east wall, under a window, is a messy desk, and chair." .. "\n\n" .. "There is a door to the upstairs hall to the north, and a door to your bathroom to the south.\n",
+		description = "You are standing in your bedroom. It is, like most teenager's rooms, a mess. There are posters all over the walls, and clothes all over the floor. Against the west wall is your bed, and against the east wall, under a window, is a messy desk, and chair." .. "\n\n" .. "There is a door to the upstairs hall to the north, and a door to your bathroom to the south.",
 		feature = {
 			[1] = {
 				name = {[1] = "Bed",},
-				description = "Your bed. As usual, it hasn't been made.\n",
+				description = "Your bed. As usual, it hasn't been made.",
 				seen = false,
 				isopen = nil,
                 hasitem = nil,
 			},
 			[2] = {
 				name = {[1] = "Ceiling", [2] = "Roof",},
-				description = "The ceiling of your bedroom is pretty uninteresting, except for a few unexplained stains here and there. Hey! That one looks like John A. Macdonald!\n",
+				description = "The ceiling of your bedroom is pretty uninteresting, except for a few unexplained stains here and there. Hey! That one looks like John A. Macdonald!",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[3] = {
 				name = {[1] = "Chair",},
-				description = "It's just a run-of-the-mill office chair. There is a nice butt groove in it, from years of use.\n",
+				description = "It's just a run-of-the-mill office chair. There is a nice butt groove in it, from years of use.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[4] = {
 				name = {[1] = "Desk",},
-				description = "You look at the desk. It's a simple writing desk, with one wide drawer underneath the tabletop. It is cluttered. There appears to be a flower sitting on the desk.\n",
-				description2 = "You look at the desk. It's a simple writing desk, with a one wide drawer underneath the tabletop. It is cluttered. There are papers strewn about.\n",
+				description = "You look at the desk. It's a simple writing desk, with one wide drawer underneath the tabletop. It is cluttered. There appears to be a flower sitting on the desk.",
+				description2 = "You look at the desk. It's a simple writing desk, with a one wide drawer underneath the tabletop. It is cluttered. There are papers strewn about.",
 				seen = false,
 				isopen = nil,
 				hasitem = true,
 			},
 			[5] = {
 				name = {[1] = "Drawer", [2] = "Drawers",},
-				description = "A closed desk drawer.\n",
-				description2 = "An open desk drawer. The drawer is empty.\n",
-				description3 = "An open desk drawer. There appears to be a camera inside.\n",
+				description = "A closed desk drawer.",
+				description2 = "An open desk drawer. The drawer is empty.",
+				description3 = "An open desk drawer. There appears to be a camera inside.",
 				seen = false,
 				isopen = false,
 				hasitem = true,
 			},
 			[6] = {
 				name = {[1] = "Floor",},
-				description = "The floor is carpeted, and could really use a vacuuming. There is dirty laundry strewn about, and one large pile at the foot of your bed.\n",
+				description = "The floor is carpeted, and could really use a vacuuming. There is dirty laundry strewn about, and one large pile at the foot of your bed.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[7] = {
 				name = {[1] = "Laptop", [2] = "Computer",},
-				description = "It's your laptop. You think about sitting down and playing a game, but then decide against it, on account of you have more important things to do (like going to the fair).\n",
+				description = "It's your laptop. You think about sitting down and playing a game, but then decide against it, on account of you have more important things to do (like going to the fair).",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[8] = {
 				name = {[1] = "Laundry", [2] = "Clothes",},
-				description = "Just some dirty (and smelly) laundry. As you try to gather your laundry into one heaping, smelly pile, you can hear some change clinking around inside some of the pockets.\n",
-				description2 = "Just some dirty (and smelly) laundry.\n",
+				description = "Just some dirty (and smelly) laundry. As you try to gather your laundry into one heaping, smelly pile, you can hear some change clinking around inside some of the pockets.",
+				description2 = "Just some dirty (and smelly) laundry.",
 				seen = false,
 				isopen = nil,
 				hasitem = true,
 			},
 			[9] = {
 				name = {[1] = "North Door", [2] = "N Door",},
-				description = "The door to the upstairs hallway of your home.\n",
+				description = "The door to the upstairs hallway of your home.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[10] = {
 				name = {[1] = "Paper", [2] = "Papers",},
-				description = "Just some papers. Mostly school work. Nothing of interest.\n",
+				description = "Just some papers. Mostly school work. Nothing of interest.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[11] = {
 				name = {[1] = "Poster", [2] = "Posters",},
-				description = "There are posters for various horror, sci-fi, and action movies covering the wall (A Bad Dream on Elk Street, Escape from New Jersey, 2013: A Spaced Odyssey, etc.). There are also some band posters as well (Megaded, AD/BC, Rawmones, etc.).\n",
+				description = "There are posters for various horror, sci-fi, and action movies covering the wall (A Bad Dream on Elk Street, Escape from New Jersey, 2013: A Spaced Odyssey, etc.). There are also some band posters as well (Megaded, AD/BC, Rawmones, etc.).",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[12] = {
 				name = {[1] = "South Door", [2] = "S Door",},
-				description = "The door to your bathroom.\n",
+				description = "The door to your bathroom.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[13] = {
 				name = {[1] = "Wall", [2] = "Walls",},
-				description = "The walls are a little grungy, and covered in posters. You can't remember the last time they were cleaned, or repainted.\n",
+				description = "The walls are a little grungy, and covered in posters. You can't remember the last time they were cleaned, or repainted.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[14] = {
 				name = {[1] = "Window", [2] = "Windows",},
-				description = "You look out the window. It looks like a nice summer evening. Should be nice weather for the fair.\n",
+				description = "You look out the window. It looks like a nice summer evening. Should be nice weather for the fair.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
@@ -123,48 +123,48 @@ Room_Table = {
 	[2] = {
 		name = "Your Bathroom",
 		descripstate = 1,
-		description = "Your bathroom is only slightly cleaner than your bedroom. There is a toilet in the southeast corner, and a sink to the left of the toilet. Above the sink is a mirror/medicine cabinet.\n",
+		description = "Your bathroom is only slightly cleaner than your bedroom. There is a toilet in the southeast corner, and a sink to the left of the toilet. Above the sink is a mirror/medicine cabinet.",
 		feature = {
 			[1] = {
 				name = {[1] = "Acne Medication", [2] = "Medication", [3] = "Acne Meds",},
-				description = "An old tube of acne cream. Luckily your acne is starting to subside.\n",
+				description = "An old tube of acne cream. Luckily your acne is starting to subside.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[2] = {
 				name = {[1] = "Medicine Cabinet", [2] = "Cabinet", [3] = "Med Cabinet",},
-				description = "You look into the mirror on the medicine cabinet. Mirror mirror on the wall, who's the raddest of them all?\n",
-				description2 = "Your medicine cabinet is empty.\n",
-				description3 = "Your medicine cabinet contains toothpaste, a toothbrush, hair gel, and some acne medication.\n",
+				description = "You look into the mirror on the medicine cabinet. Mirror mirror on the wall, who's the raddest of them all?",
+				description2 = "Your medicine cabinet is empty.",
+				description3 = "Your medicine cabinet contains toothpaste, a toothbrush, hair gel, and some acne medication.",
 				seen = false,
 				isopen = false,
 				hasitem = true,
 			},
 			[3] = {
 				name = {[1] = "Sink",},
-				description = "The faucet drips slowly. There appears to be a bit of toothpaste scum in the sink.\n",
+				description = "The faucet drips slowly. There appears to be a bit of toothpaste scum in the sink.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[4] = {
 				name = {[1] = "Toilet", [2] = "Crapper", [3] = "Potty",},
-				description = "Yuck. When was the last time you cleaned your toilet? You can't recall. Maybe never? At least you flushed last time.\n.",
+				description = "Yuck. When was the last time you cleaned your toilet? You can't recall. Maybe never? At least you flushed last time.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[5] = {
 				name = {[1] = "Toothbrush", [2] = "Brush",},
-				description = "A tool for brushing your chompers. Chompers is the medical term for teeth, in case you didn't know.\n",
+				description = "A tool for brushing your chompers. Chompers is the medical term for teeth, in case you didn't know.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
 			},
 			[6] = {
 				name = {[1] = "Toothpaste", [2] = "Paste",},
-				description = "A half squeezed tube of toothpaste. Like the toothbrush, it helps keep your pearly whites white (or at least sort of off-white).\n",
+				description = "A half squeezed tube of toothpaste. Like the toothbrush, it helps keep your pearly whites white (or at least sort of off-white).",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
@@ -179,7 +179,7 @@ Room_Table = {
 		feature = {
 			[1] = {
 				name = {[1] = "Biff", [2] = "Brother", [3] = "Jerk",},
-				description = "Your older brother, AKA The biggest dick on planet Earth.\n",
+				description = "Your older brother, AKA The biggest dick on planet Earth.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
@@ -187,7 +187,7 @@ Room_Table = {
 			},
 			[2] = {
 				name = {[1] = "Stuff",},
-				description = "An old tube of acne cream. Luckily your acne is starting to subside.\n",
+				description = "An old tube of acne cream. Luckily your acne is starting to subside.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
@@ -201,7 +201,7 @@ Room_Table = {
 		feature = {
 			[1] = {
 				name = {[1] = "Stuff",},
-				description = "Just some stuff.\n",
+				description = "Just some stuff.",
 				seen = false,
 				isopen = nil,
 				hasitem = nil,
@@ -331,7 +331,7 @@ local Act_Table = {
 	},
 	[7] = {
 		name = "Look",
-		usage = "Look at a specified object, whether held or in the world." .. "\n\n" .. "Usage: look <OBJECT>" .. "\n",
+		usage = "Look at a specified object, whether held or in the room." .. "\n\n" .. "Usage: look <OBJECT>" .. "\n",
 	},
 	[8] = {
 		name = "Open",
@@ -379,20 +379,32 @@ local Player_Table = {
 
 --[[ 'CORE' FUNCTIONS ]]--
 
+--[[ Print Horizontal Rule ]]--
+
+function PrintHR()
+	local termw, termh = term.getSize()
+	for HR = 1, termw do
+		write("-")
+	end
+	print(HR)
+end
+
 --[[ Print Title ]]--
 
 function PrintTitle()
 	term.clear()
-	term.setCursorPos(9,4)
-	write("---------------------------------")
+	term.setCursorPos(1,4)
+	term.setTextColor(colors.lightGray)
+	PrintHR()
+	term.setTextColor(colors.white)
 	term.setCursorPos(14,6)
 	print("TALES FROM THE FUNHOUSE")
-	term.setCursorPos(9,8)
-	write("---------------------------------")
-	term.setCursorPos(21,10)
-	write("A GAME BY")
-	term.setCursorPos(19,11)
-	write("ALEX CRAWFORD")
+	term.setCursorPos(1,8)
+	term.setTextColor(colors.lightGray)
+	PrintHR()
+	term.setTextColor(colors.white)
+	term.setCursorPos(14,11)
+	write("A GAME BY ALEX CRAWFORD")
 	os.pullEvent()
 end
 
@@ -409,19 +421,24 @@ end
 
 function PrintMenu()
 	term.clear()
-	term.setCursorPos(1,1)
+	term.setCursorPos(1,4)
 	term.setTextColor(colors.lightGray)
-	write("--------------------------------\n")
+	PrintHR()
 	term.setTextColor(colors.white)
-	write("Main Menu\n")
+	term.setCursorPos(21,5)
+	print("MAIN MENU")
 	term.setTextColor(colors.lightGray)
-	write("--------------------------------\n\n")
+	PrintHR()
+	print()
 	term.setTextColor(colors.white)
-	write("1. New Game" .. "\n")
-	write("2. Load Game" .. "\n")
-	write("3. Credits" .. "\n\n")
-	
-	write("4. Quit" .. "\n")
+	term.setCursorPos(20,8)
+	print("1. New Game")
+	term.setCursorPos(20,9)
+	print("2. Load Game")
+	term.setCursorPos(20,10)
+	print("3. Credits")
+	term.setCursorPos(20,12)
+	print("4. Quit")
 	
 	local event, param = os.pullEvent("char")	
 	
@@ -443,17 +460,23 @@ end
 --[[ Print Room Info ]]--
 
 function PrintRoomInfo()
-	
-	write(string.upper(Player_Table["location"]) .. "\n\n")
 
+	term.setTextColor(colors.lightGray)
+	PrintHR()
+	term.setTextColor(colors.white)
+	print(string.upper(Player_Table["location"]))
+	term.setTextColor(colors.lightGray)
+	PrintHR()
+	term.setTextColor(colors.white)
+	print()
 	for i, v in ipairs(Room_Table) do
 		if Room_Table[i]["name"] == Player_Table["location"] then
 			if Room_Table[i]["descripstate"] == 1 then
-				write(Room_Table[i]["description"] .. "\n\n")
+				write(Room_Table[i]["description"] .. "\n")
 			elseif Room_Table[i]["descripstate"] == 2 then
-				write(Room_Table[i]["description2"] .. "\n\n")
+				write(Room_Table[i]["description2"] .. "\n")
 			elseif Room_Table[i]["descripstate"] == 3 then
-				write(Room_Table[i]["description3"] .. "\n\n")
+				write(Room_Table[i]["description3"] .. "\n")
 			end
 		end
 	end
@@ -510,6 +533,8 @@ end
 
 function GetInput()
 	term.setTextColor(colors.lightGray)
+	print()
+	PrintHR()
 	print()
 	term.setTextColor(colors.green)
 	write("-> ")
@@ -623,6 +648,7 @@ function LoadGame()
 		print("\n" .. "File " .. "\"" .. FileName .. "\"" .. " loaded." .. "\n\n")
 		
 		FirstPlay = false
+		LoadMode = false
 		
 end
 
@@ -667,7 +693,7 @@ function GenRoomFunc(Input)
 									end
 								end
 							end
-							print("Item closed.")
+							print(Room_Table[i]["feature"][i2]["name"][1] .. " closed.")
 						end
 					end
 				elseif Room_Table[i]["feature"][i2]["isopen"] == false then
@@ -808,10 +834,11 @@ function GenRoomFunc(Input)
  
 	if string.find(Input, string.lower(Act_Table[7]["name"])) then
     	for i, v in ipairs(Room_Table) do
-			if Room_Table[i]["name"] == Player_Table["location"] then
-    		    for i2, v in ipairs(Room_Table[i]["feature"]) do
-					for i3, v in ipairs(Room_Table[i]["feature"][i2]["name"]) do
-						if Input == string.lower(Act_Table[7]["name"]) .. " " .. string.lower(Room_Table[i]["feature"][i2]["name"][i3]) then
+			
+    		for i2, v in ipairs(Room_Table[i]["feature"]) do
+				for i3, v in ipairs(Room_Table[i]["feature"][i2]["name"]) do
+					if Input == string.lower(Act_Table[7]["name"]) .. " " .. string.lower(Room_Table[i]["feature"][i2]["name"][i3]) then
+						if Room_Table[i]["name"] == Player_Table["location"] then
 							if Room_Table[i]["feature"][i2]["hasitem"] == nil then
 								if Room_Table[i]["feature"][i2]["isopen"] == nil then
 									if Room_Table[i]["feature"][i2]["seen"] == false then
@@ -911,6 +938,8 @@ function GenRoomFunc(Input)
 									end
 								end
 							end
+						elseif Room_Table[i]["name"] ~= Player_Table["location"] or string.find(Input, Room_Table[i]["feature"][i2]) == nil then
+							print("Invalid action.")
 						end
 					end
 				end
@@ -980,9 +1009,9 @@ function GenRoomFunc(Input)
 		for i, v in ipairs(Room_Table) do
 			if Room_Table[i]["name"] == Player_Table["location"] then
 				if Room_Table[i]["descripstate"] == 1 then
-					print(Room_Table[i]["description"] .. "\n")
+					print(Room_Table[i]["description"])
 				elseif Room_Table[i]["descripstate"] == 2 then
-					print(Room_Table[i]["description2"] .. "\n")
+					print(Room_Table[i]["description2"])
 				end
 			end
 		end
@@ -1002,7 +1031,7 @@ function GenRoomFunc(Input)
 								print("That's already open.\n")
 							elseif Room_Table[i]["feature"][i2]["isopen"] == false then
 								Room_Table[i]["feature"][i2]["isopen"] = true
-								print(Room_Table[i]["feature"][i2]["name"][i3] .. " is now open.\n")
+								print(Room_Table[i]["feature"][i2]["name"][1] .. " opened.")
 								for i, v in ipairs(Inv_Table) do
 									if Inv_Table[i]["feature"] == Room_Table[i]["feature"][i2] then
 										Inv_Table[i]["hidden"] = false
@@ -1054,6 +1083,9 @@ function GenRoomFunc(Input)
 	if Input == string.lower(Act_Table[12]["name"]) then
 		SaveMode = true
 	end
+	if Input == string.lower("load") then
+		LoadMode = true
+	end
 	if string.find(Input, "fuck") or string.find(Input, "shit") or string.find(Input, "cunt") then
 		print("There is no need for that kind of language.\n")
 	end	
@@ -1080,7 +1112,7 @@ function Room3_Func(Input)
 											if Inv_Table[i]["used"] == false then
 												Room_Table[i]["feature"][i2]["hasitem"] = true
 												Inv_Table[i]["used"] = true
-												print("Biff storms off to his bedroom. As soon as his door slams closed, you can hear music blaring through it.\n")
+												print("You give all your change to Biff, and he storms off to his bedroom. As soon as his door slams closed, you can hear music blaring through it.")
 											end
 										elseif Inv_Table[i]["held"] == false then
 											return
@@ -1118,6 +1150,7 @@ GameRun = true
 FirstPlay = true
 InMenu = true
 SaveMode = false
+LoadMode = false
 
 while GameRun == true do
 
@@ -1157,6 +1190,9 @@ while GameRun == true do
 				while SaveMode == true do
 					SaveGame()
 				end
+				while LoadMode == true do
+					LoadGame()
+				end
 				QuitGame(Input)
 				ScoreCheck()
 			until Player_Table["location"] ~= Room_Table[1]["name"]
@@ -1177,6 +1213,9 @@ while GameRun == true do
 				GenRoomFunc(Input)
 				while SaveMode == true do
 					SaveGame()
+				end
+				while LoadMode == true do
+					LoadGame()
 				end
 				QuitGame(Input)
 				ScoreCheck()
@@ -1204,6 +1243,9 @@ while GameRun == true do
 				while SaveMode == true do
 					SaveGame()
 				end
+				while LoadMode == true do
+					LoadGame()
+				end
 				QuitGame(Input)
 				ScoreCheck()
 			until Player_Table["location"] ~= Room_Table[3]["name"]
@@ -1230,6 +1272,9 @@ while GameRun == true do
 				--coroutine.resume(GenRoutine)
 				while SaveMode == true do
 					SaveGame()
+				end
+				while LoadMode == true do
+					LoadGame()
 				end
 				QuitGame(Input)
 				ScoreCheck()
