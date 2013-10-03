@@ -13,8 +13,6 @@ modem = peripheral.wrap("top") -- Replace "top" with the location of the wireles
 
 rednet.open("top") -- Replace "top" with the location of the wireless modem on the computer.
 
--- Replace "top" with the location of the wireless modem on the computer.
-
 local PortStatus = tostring(rednet.isOpen("top"))
  
 if PortStatus == "true" then -- Prints the current status of the port.
